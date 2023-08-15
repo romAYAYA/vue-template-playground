@@ -1,5 +1,24 @@
 <template>
-  <h1>Hello, vue</h1>
+  <div class="wrapper">
+    <Header />
+    <div class="wrapper-content">
+      <div class="container">
+        <h1>Hello, vue</h1>
+      </div>
+    </div>
+    <Footer />
+  </div>
 </template>
+
+<script>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+
+export default {
+  components: { Header, Footer },
+}
+
+// lesson 25
+</script>
 
 <style lang="scss"></style>

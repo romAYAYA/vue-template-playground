@@ -1,2 +1,35 @@
-@use "./typography";
-@use "./default";
+@use './typography';
+@use './default';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  margin-top: 80px;
+}
+
+.container {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
