@@ -1,12 +1,12 @@
 <template>
   <div class="wrapper">
-    <Header />
+    <Header :title="title" :links="links" />
     <div class="wrapper-content">
       <div class="container">
         <h1>Hello, vue</h1>
       </div>
     </div>
-    <Footer />
+    <Footer :links="links" />
   </div>
 </template>
 
@@ -16,9 +16,25 @@ import Footer from '@/components/Footer.vue'
 
 export default {
   components: { Header, Footer },
-}
 
-// lesson 25
+  data() {
+    return {
+      title: 'Template',
+      links: [
+        {
+          title: 'Home',
+          alias: 'home',
+          url: '/',
+        },
+        {
+          title: 'About',
+          alias: 'about',
+          url: '/about',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="scss"></style>
