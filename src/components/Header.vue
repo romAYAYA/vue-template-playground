@@ -13,18 +13,16 @@
     </div>
   </header>
 </template>
-// lesson 28
+
 <script>
+import { app, links } from '@/_config'
+
 export default {
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    links: {
-      type: Array,
-      required: true,
-    },
+  data() {
+    return {
+      title: app.title,
+      links: links,
+    }
   },
 }
 </script>

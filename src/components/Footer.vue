@@ -13,12 +13,13 @@
 </template>
 
 <script>
+import { links } from '@/_config'
+
 export default {
-  props: {
-    links: {
-      type: Array,
-      required: true,
-    },
+  data() {
+    return {
+      links: links,
+    }
   },
 }
 </script>

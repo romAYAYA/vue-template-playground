@@ -1,12 +1,12 @@
 <template>
   <div class="wrapper">
-    <Header :title="title" :links="links" />
+    <Header />
     <div class="wrapper-content">
       <div class="container">
         <h1>Hello, vue</h1>
       </div>
     </div>
-    <Footer :links="links" />
+    <Footer />
   </div>
 </template>
 
@@ -16,24 +16,6 @@ import Footer from '@/components/Footer.vue'
 
 export default {
   components: { Header, Footer },
-
-  data() {
-    return {
-      title: 'Template',
-      links: [
-        {
-          title: 'Home',
-          alias: 'home',
-          url: '/',
-        },
-        {
-          title: 'About',
-          alias: 'about',
-          url: '/about',
-        },
-      ],
-    }
-  },
 }
 </script>
 
